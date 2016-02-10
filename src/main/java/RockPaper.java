@@ -10,7 +10,19 @@ import java.util.Random;
 public class RockPaper {
   public static void main(String[] args) {}
 
-  
+  public static String randomMove() {
+    Random myRandom = new Random();
+    int computerMove = myRandom.nextInt(3);
+    if (computerMove == 0) {
+      return "rock";
+    } else if (computerMove == 1) {
+      return "paper";
+    } else if (computerMove == 2) {
+      return "scissors";
+    } else {
+      return "randomMove error";
+    }
+  }
 
   public static Boolean checkPlayer1Wins(String player1, String player2) {
     if ((player1.equalsIgnoreCase("Rock") && player2.equalsIgnoreCase("Scissors")) || (player1.equalsIgnoreCase("Paper") && player2.equalsIgnoreCase("Rock")) || (player1.equalsIgnoreCase("Scissors") && player2.equalsIgnoreCase("Paper"))) {
@@ -26,7 +38,10 @@ public class RockPaper {
     return false;
   }
 
-  public static String runGame(String player1, String player2) {
+  public static String runGame(String player1) {
+
+    String player2 = randomMove();
+
     if (checkTie(player1, player2)) {
       return "tie";
     } else if (checkPlayer1Wins(player1, player2)) {

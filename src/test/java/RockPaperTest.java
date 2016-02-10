@@ -3,15 +3,12 @@ import org.junit.*;
 
 public class RockPaperTest {
 
-  @Test
-  public void randomMove_assignMoveToRandomNumber_rock() {
-    RockPaper testApp = new RockPaper();
-    // genrandom number
-    // assign that to computermove
-    // computer move to correctstring of move
-
-    assertEquals("rock", testApp.randomMove(0));
-  }
+  // @Test
+  // public void randomMove_assignMoveToRandomNumber_rock() {
+  //   RockPaper testApp = new RockPaper();
+  //   assertEquals("rock", testApp.randomMove());
+  //   //this 'might' pass about a third of the time
+  // }
 
   @Test
   public void checkPlayer1Wins_rockBeatsScissors_true() {

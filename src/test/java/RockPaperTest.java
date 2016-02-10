@@ -23,13 +23,13 @@ public class RockPaperTest {
   }
 
   @Test
-  public void runGame_paperTiesPaper_tie() {
+  public void gameOutcome_paperTiesPaper_tie() {
     RockPaper testApp = new RockPaper();
-    assertEquals("tie", testApp.runGame("paper","paper"));
+    assertEquals("tie", testApp.gameOutcome("paper","paper"));
   }
   @Test
-  public void endOfGame_rockLosesPaper_player2wins() {
+  public void gameOutcome_rockLosesPaper_player2wins() {
     RockPaper testApp = new RockPaper();
-    assertEquals("player2wins", testApp.runGame("rock","paper"));
+    assertEquals("player2wins", testApp.gameOutcome("rock","paper"));
   }
 }

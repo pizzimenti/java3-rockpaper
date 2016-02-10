@@ -25,11 +25,11 @@ public class RockPaperTest {
   @Test
   public void gameOutcome_paperTiesPaper_tie() {
     RockPaper testApp = new RockPaper();
-    assertEquals("tie", testApp.gameOutcome("paper","paper"));
+    assertEquals("Tie", testApp.gameOutcome("paper","paper"));
   }
   @Test
   public void gameOutcome_rockLosesPaper_player2wins() {
     RockPaper testApp = new RockPaper();
-    assertEquals("player2wins", testApp.gameOutcome("rock","paper"));
+    assertEquals("Player 2 Wins", testApp.gameOutcome("rock","paper"));
   }
 }

@@ -28,7 +28,6 @@ public class RockPaper {
       model.put("result", result);
       model.put("player1Move", player1Move);
       model.put("player2Move", player2Move);
-
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }

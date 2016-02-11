@@ -1,3 +1,5 @@
+// great looking project! your java file is easy to understand and your tests are clean! thanks for all the help as well btw!
+
 import java.util.HashMap;
 
 import spark.ModelAndView;
@@ -34,6 +36,8 @@ public class RockPaper {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
+
+  // good job on the randomizer! good use of error check
 
   public static String randomMove() {
     Random myRandom = new Random();

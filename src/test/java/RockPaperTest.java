@@ -3,6 +3,9 @@ import org.junit.*;
 
 public class RockPaperTest {
 
+// could probably remove this right? cause your not testing for random in the end.
+
+
   // @Test
   // public void randomMove_assignMoveToRandomNumber_rock() {
   //   RockPaper testApp = new RockPaper();

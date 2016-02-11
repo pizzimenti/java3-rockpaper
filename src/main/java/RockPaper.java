@@ -22,7 +22,10 @@ public class RockPaper {
       HashMap model = new HashMap();
       model.put("template", "templates/outcome.vtl");
       String player1Move = request.queryParams("player1Move");
-      String player2Move = randomMove();
+      String player2Move = request.queryParams("player2Move");
+      if (player2Move == null) {
+        player2Move = randomMove();
+      }
       String result = gameOutcome(player1Move, player2Move);
 
       model.put("result", result);

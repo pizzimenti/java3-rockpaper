@@ -2,12 +2,29 @@
   <h1>Rock, Paper, Scissors</h1>
 </div>
 
-<form id="moveSelection" action="/outcome">
-    <div class="radio">
-      <h3>Choose your move</h3>
-      <label><input id="rockMove" type="radio" name="player1Move" value="rock">Rock</label>
-      <label><input id="paperMove" type="radio" name="player1Move" value="paper">Paper</label>
-      <label><input id="scissorsMove" type="radio" name="player1Move" value="scissors">Scissors</label>
-    </div>
-  <button type="submit" class="btn">Play!</button>
-</form>
+<div class="row">
+  <div class="col-md-6">
+  <form id="moveSelection" action="/outcome">
+      <div class="radio" data-toggle="buttons">
+        <h3>Player one move</h3>
+        <label class="btn btn-danger"><input id="rockMove" type="radio" name="player1Move" value="rock">Rock</label>
+        <label class="btn btn-info"><input id="paperMove" type="radio" name="player1Move" value="paper">Paper</label>
+        <label class="btn btn-warning"><input id="scissorsMove" type="radio" name="player1Move" value="scissors">Scissors</label>
+      </div>
+  </div>
+  <div class="col-md-6">
+      <div class="radio" data-toggle="buttons">
+        <h3>Player two move</h3>
+        <label class="btn btn-danger"><input id="rockMove2" type="radio" name="player2Move" value="rock">Rock</label>
+        <label class="btn btn-info"><input id="paperMove2" type="radio" name="player2Move" value="paper">Paper</label>
+        <label class="btn btn-warning"><input id="scissorsMove2" type="radio" name="player2Move" value="scissors">Scissors</label>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <button type="submit" class="btn btn-success btn-lg">Play!</button>
+  </form>
+  </div>
+</div>
